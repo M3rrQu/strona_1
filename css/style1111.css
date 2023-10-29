@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+* {box-sizing:border-box}
+#photos{
+  width: 100%;
+}
+img{
+  margin-left: 20%;
+  width: 60%;
+  height: 60%;
+}

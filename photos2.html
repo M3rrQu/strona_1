@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="css/style1111.css">
+    <link rel="icon" href="hemnet-symbol.svg">
+</head>
+<body>
+    <div id="photos">
+
+              <img id="fullScreenElement4" onclick="document.getElementById('fullScreenElement4').requestFullscreen()" src="img/photo1.jpeg" >
+
+              <img id="fullScreenElement5" onclick="document.getElementById('fullScreenElement5').requestFullscreen()" src="img/photo2.jpeg" >
+
+              <img id="fullScreenElement1" onclick="document.getElementById('fullScreenElement1').requestFullscreen()" src="img/photo3.jpeg" >
+
+              <img id="fullScreenElement2" onclick="document.getElementById('fullScreenElement2').requestFullscreen()" src="img/photo4.jpeg" >
+
+              <img id="fullScreenElement3" onclick="document.getElementById('fullScreenElement3').requestFullscreen()" src="img/photo5.jpeg" >
+
+        <script>
+            function toggleFullScreen(id) {
+              document.getElementById(id).requestFullscreen()
+            }
+          </script>
+    </div>
+
+</body>
+</html>

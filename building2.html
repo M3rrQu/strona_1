@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building2</title> 
+    <link rel="stylesheet" href="css/style101.css">
+    <link rel="icon" href="hemnet-symbol.svg">
+</head>
+<body>
+  <div class="header">
+    <img style="width: 50px; height: 50px;" type="button" onclick="document.location='logo.html'" src="hemnet-symbol.svg">
+    <div class="header-right">
+      <a type="button" onclick="document.location='home.html'">Home</a>
+      <a type="button" onclick="document.location='about.html'">About</a>
+    </div>
+  </div>
+  <div id="ever">
+  <div id="all">
+    <div id="one">
+      <div>
+        <div class="slideshow-container"> 
+          <div id="w">
+            <div id="q"></div>
+            <h1>building name2</h1>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img style="border-radius: 15px 15px 0px 0px" id="fullScreenElement4" onclick="document.getElementById('fullScreenElement4').requestFullscreen()" src="img/photo1.jpeg" width="696" height="400" >
+            <button style="margin-left:6%;" class="button button1" type="button" onclick="document.getElementById('fullScreenElement4').requestFullscreen()">Full screen</button>
+            <div class="text"></div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img style="border-radius: 15px 15px 0px 0px" id="fullScreenElement5" onclick="document.getElementById('fullScreenElement5').requestFullscreen()" src="img/photo2.jpeg" width="696" height="400" >
+            <button style="margin-left:6%;" class="button button1" type="button" onclick="document.getElementById('fullScreenElement5').requestFullscreen()">Full screen</button>
+            <div class="text"></div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img style="border-radius: 15px 15px 0px 0px" id="fullScreenElement1" onclick="document.getElementById('fullScreenElement1').requestFullscreen()" src="img/photo3.jpeg" width="696" height="400" >
+            <button style="margin-left:6%;" class="button button1" type="button" onclick="document.getElementById('fullScreenElement1').requestFullscreen()">Full screen</button>
+            <div class="text"></div>
+          </div>       
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img style="border-radius: 15px 15px 0px 0px" id="fullScreenElement2" onclick="document.getElementById('fullScreenElement2').requestFullscreen()" src="img/photo4.jpeg" width="696" height="400">
+            <button style="margin-left:6%;" class="button button1" type="button" onclick="document.getElementById('fullScreenElement2').requestFullscreen()">Full screen</button>
+            <div class="text"></div>
+          </div>        
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img style="border-radius: 15px 15px 0px 0px" id="fullScreenElement3" onclick="document.getElementById('fullScreenElement3').requestFullscreen()" src="img/photo5.jpeg" width="696" height="400">
+            <button style="margin-left:6%;" class="button button1" type="button" onclick="document.getElementById('fullScreenElement3').requestFullscreen()">Full screen</button>
+            <div class="text"></div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <button style="float:right; margin-right:6%;" class="button button1" type="button" onclick="document.location='walk.html'" style="float: right">3D Model</button>
+        <button style="float:left; margin-left:6%;" class="button button1" type="button" onclick="document.location='img/plan.png'" style="float: right">Plan</button>
+        <button style="float:right; margin-right:6%;" class="button button1" type="button" onclick="document.location='photos.html'" style="float: right">Photos</button>
+        <button style="float:right; margin-right:6%;" class="button button1" type="button" onclick="document.location='photos2.html'" style="float: right">Photos2</button>
+        <br> 
+        <div id="dotss">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+      <HR style="margin: auto;" SIZE=2 WIDTH=650 color="black">
+        <script>
+          function toggleFullScreen(id) {
+            document.getElementById(id).requestFullscreen()
+          }
+        </script>
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+      </div>
+    <div id="three">
+      <div id="in">
+        <div id="name">
+          <h2>building name</h2>
+        </div>
+        <div id="cost">
+          <h2>cost: 10000000</h2>
+        </div>
+        <div id="loc">
+          <h2>location</h2>
+        </div> 
+      </div>
+    </div>
+    <HR style="margin: auto;" SIZE=2 WIDTH=650 color="black">
+    <div id="four">
+      <h2>description</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button class="button button1" onclick="myFunction()" id="myBtn">Read more</button>
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+          }
+        }
+      </script>
+    </div>
+    <div id="table">
+      <table>
+        <tr>
+          <th>Bostadstyp</th>
+          <th>Lägenhet</th>
+        </tr>
+        <tr>
+          <th>Upplåtelseform</th>
+          <th>Bostadsrätt</th>
+        </tr>
+        <tr>
+          <th>Antal rum</th>
+          <th>2 rum</th>
+        </tr>
+        <tr>
+          <th>Boarea</th>
+          <th>51 m²</th>
+        </tr>
+        <tr>
+          <th>Våning</th>
+          <th>2 av 4, hiss finns</th>
+        </tr>
+        <tr>
+          <th>Förening</th>
+          <th>BRF Lilla Varvsgatan i Malmö</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="second">
+    <div id="contactfull">
+      <h2 class="contact contact1">contact</h2>
+      <h3 class="contact name">Michael</h3>
+    </div>
+    <div id="photoC">
+      <img id="personp" src="img/person1.jpg" width="120px" height="120px">
+    </div>
+    <div id="conbut">
+      <SCRIPT>
+        function ShowAndHide() {
+            var x = document.getElementById('contxt');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+        </SCRIPT>
+        <BUTTON id="buttoncon" class="button2 button2" ONCLICK="ShowAndHide()">Phone contact</BUTTON>
+        <DIV ID="contxt" STYLE="display:none">+00 000 000 000</DIV>
+    </div>
+    <div id="mailbut">
+      <SCRIPT>
+        function ShowAndHide2() {
+            var x = document.getElementById('contxt2');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+        </SCRIPT>
+        <BUTTON id="buttoncon" class="button2 button2" ONCLICK="ShowAndHide2()">Mail contact</BUTTON>
+        <DIV ID="contxt2" STYLE="display:none">mail@gmail.com</DIV>
+    </div>
+    <HR style="margin: auto;" SIZE=2 WIDTH=350 color="black">
+      <div style="margin-top:20px; margin-bottom:20px;"class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144373.376975184!2d12.875890631366143!3d55.570088641125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465305a574c491ff%3A0xd3a905dfbd4888e5!2sMalmo!5e0!3m2!1spl!2sse!4v1682680792197!5m2!1spl!2sse" width="376" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    <HR style="margin: auto;" SIZE=2 WIDTH=350 color="black">
+    <div class="calendar"></div>
+    <script>
+      function CalendarControl() {
+        const calendar = new Date();
+        const calendarControl = {
+          localDate: new Date(),
+          prevMonthLastDate: null,
+          calWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          calMonthName: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          daysInMonth: function (month, year) {
+            return new Date(year, month, 0).getDate();
+          },
+          firstDay: function () {
+            return new Date(calendar.getFullYear(), calendar.getMonth(), 1);
+          },
+          lastDay: function () {
+            return new Date(calendar.getFullYear(), calendar.getMonth() + 1, 0);
+          },
+          firstDayNumber: function () {
+            return calendarControl.firstDay().getDay() + 1;
+          },
+          lastDayNumber: function () {
+            return calendarControl.lastDay().getDay() + 1;
+          },
+          getPreviousMonthLastDate: function () {
+            let lastDate = new Date(
+              calendar.getFullYear(),
+              calendar.getMonth(),
+              0
+            ).getDate();
+            return lastDate;
+          },
+          navigateToPreviousMonth: function () {
+            calendar.setMonth(calendar.getMonth() - 1);
+            calendarControl.attachEventsOnNextPrev();
+          },
+          navigateToNextMonth: function () {
+            calendar.setMonth(calendar.getMonth() + 1);
+            calendarControl.attachEventsOnNextPrev();
+          },
+          navigateToCurrentMonth: function () {
+            let currentMonth = calendarControl.localDate.getMonth();
+            let currentYear = calendarControl.localDate.getFullYear();
+            calendar.setMonth(currentMonth);
+            calendar.setYear(currentYear);
+            calendarControl.attachEventsOnNextPrev();
+          },
+          displayYear: function () {
+            let yearLabel = document.querySelector(".calendar .calendar-year-label");
+            yearLabel.innerHTML = calendar.getFullYear();
+          },
+          displayMonth: function () {
+            let monthLabel = document.querySelector(
+              ".calendar .calendar-month-label"
+            );
+            monthLabel.innerHTML = calendarControl.calMonthName[calendar.getMonth()];
+          },
+          selectDate: function (e) {
+            console.log(
+              `${e.target.textContent} ${
+                calendarControl.calMonthName[calendar.getMonth()]
+              } ${calendar.getFullYear()}`
+            );
+          },
+          plotSelectors: function () {
+            document.querySelector(
+              ".calendar"
+            ).innerHTML += `<div class="calendar-inner"><div class="calendar-controls">
+              <div class="calendar-prev"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#666" d="M88.2 3.8L35.8 56.23 28 64l7.8 7.78 52.4 52.4 9.78-7.76L45.58 64l52.4-52.4z"/></svg></a></div>
+              <div class="calendar-year-month">
+              <div class="calendar-month-label"></div>
+              <div>-</div>
+              <div class="calendar-year-label"></div>
+              </div>
+              <div class="calendar-next"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#666" d="M38.8 124.2l52.4-52.42L99 64l-7.77-7.78-52.4-52.4-9.8 7.77L81.44 64 29 116.42z"/></svg></a></div>
+              </div>
+              <div class="calendar-today-date">Today: 
+                ${calendarControl.calWeekDays[calendarControl.localDate.getDay()]}, 
+                ${calendarControl.localDate.getDate()}, 
+                ${calendarControl.calMonthName[calendarControl.localDate.getMonth()]} 
+                ${calendarControl.localDate.getFullYear()}
+              </div>
+              <div class="calendar-body"></div></div>`;
+          },
+          plotDayNames: function () {
+            for (let i = 0; i < calendarControl.calWeekDays.length; i++) {
+              document.querySelector(
+                ".calendar .calendar-body"
+              ).innerHTML += `<div>${calendarControl.calWeekDays[i]}</div>`;
+            }
+          },
+          plotDates: function () {
+            document.querySelector(".calendar .calendar-body").innerHTML = "";
+            calendarControl.plotDayNames();
+            calendarControl.displayMonth();
+            calendarControl.displayYear();
+            let count = 1;
+            let prevDateCount = 0;
+      
+            calendarControl.prevMonthLastDate = calendarControl.getPreviousMonthLastDate();
+            let prevMonthDatesArray = [];
+            let calendarDays = calendarControl.daysInMonth(
+              calendar.getMonth() + 1,
+              calendar.getFullYear()
+            );
+            // dates of current month
+            for (let i = 1; i < calendarDays; i++) {
+              if (i < calendarControl.firstDayNumber()) {
+                prevDateCount += 1;
+                document.querySelector(
+                  ".calendar .calendar-body"
+                ).innerHTML += `<div class="prev-dates"></div>`;
+                prevMonthDatesArray.push(calendarControl.prevMonthLastDate--);
+              } else {
+                document.querySelector(
+                  ".calendar .calendar-body"
+                ).innerHTML += `<div class="number-item" data-num=${count}><a class="dateNumber" href="#">${count++}</a></div>`;
+              }
+            }
+            //remaining dates after month dates
+            for (let j = 0; j < prevDateCount + 1; j++) {
+              document.querySelector(
+                ".calendar .calendar-body"
+              ).innerHTML += `<div class="number-item" data-num=${count}><a class="dateNumber" href="#">${count++}</a></div>`;
+            }
+            calendarControl.highlightToday();
+            calendarControl.plotPrevMonthDates(prevMonthDatesArray);
+            calendarControl.plotNextMonthDates();
+          },
+          attachEvents: function () {
+            let prevBtn = document.querySelector(".calendar .calendar-prev a");
+            let nextBtn = document.querySelector(".calendar .calendar-next a");
+            let todayDate = document.querySelector(".calendar .calendar-today-date");
+            let dateNumber = document.querySelectorAll(".calendar .dateNumber");
+            prevBtn.addEventListener(
+              "click",
+              calendarControl.navigateToPreviousMonth
+            );
+            nextBtn.addEventListener("click", calendarControl.navigateToNextMonth);
+            todayDate.addEventListener(
+              "click",
+              calendarControl.navigateToCurrentMonth
+            );
+            for (var i = 0; i < dateNumber.length; i++) {
+                dateNumber[i].addEventListener(
+                  "click",
+                  calendarControl.selectDate,
+                  false
+                );
+            }
+          },
+          highlightToday: function () {
+            let currentMonth = calendarControl.localDate.getMonth() + 1;
+            let changedMonth = calendar.getMonth() + 1;
+            let currentYear = calendarControl.localDate.getFullYear();
+            let changedYear = calendar.getFullYear();
+            if (
+              currentYear === changedYear &&
+              currentMonth === changedMonth &&
+              document.querySelectorAll(".number-item")
+            ) {
+              document
+                .querySelectorAll(".number-item")
+                [calendar.getDate() - 1].classList.add("calendar-today");
+            }
+          },
+          plotPrevMonthDates: function(dates){
+            dates.reverse();
+            for(let i=0;i<dates.length;i++) {
+                if(document.querySelectorAll(".prev-dates")) {
+                    document.querySelectorAll(".prev-dates")[i].textContent = dates[i];
+                }
+            }
+          },
+          plotNextMonthDates: function(){
+           let childElemCount = document.querySelector('.calendar-body').childElementCount;
+           //7 lines
+           if(childElemCount > 42 ) {
+               let diff = 49 - childElemCount;
+               calendarControl.loopThroughNextDays(diff);
+           }
+    
+           //6 lines
+           if(childElemCount > 35 && childElemCount <= 42 ) {
+            let diff = 42 - childElemCount;
+            calendarControl.loopThroughNextDays(42 - childElemCount);
+           }
+    
+          },
+          loopThroughNextDays: function(count) {
+            if(count > 0) {
+                for(let i=1;i<=count;i++) {
+                    document.querySelector('.calendar-body').innerHTML += `<div class="next-dates">${i}</div>`;
+                }
+            }
+          },
+          attachEventsOnNextPrev: function () {
+            calendarControl.plotDates();
+            calendarControl.attachEvents();
+          },
+          init: function () {
+            calendarControl.plotSelectors();
+            calendarControl.plotDates();
+            calendarControl.attachEvents();
+          }
+        };
+        calendarControl.init();
+      }
+      
+      const calendarControl = new CalendarControl();
+    </script>
+  </div>
+  </div>
+  <div id="bot">
+    <div class="element" class="button button1" onclick="document.location='building1.html'" id="myBtn">
+      <img class="photo" src="img/photo1.jpeg">
+      <h2>building name</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+      <button class="button button1" onclick="document.location='building1.html'" id="myBtn">Read more</button>
+    </div>
+    <div class="element" class="button button1" onclick="document.location='building2.html'" id="myBtn">
+      <img class="photo" src="img/photo2.jpeg">
+      <h2>building Name</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+      <button class="button button1" onclick="document.location='building2.html'" id="myBtn">Read more</button>
+    </div>
+    <div class="element" class="button button1" onclick="document.location='building3.html'" id="myBtn">
+      <img class="photo" src="img/photo3.jpeg">
+      <h2>building name</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+      <button class="button button1" onclick="document.location='building3.html'" id="myBtn">Read more</button>
+    </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
+  </div>
+</body>
+</html>
